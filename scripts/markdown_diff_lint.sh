@@ -4,7 +4,7 @@
 
 
 # We source ./scripts/test_lib.sh, it sets the log functions and color variables.
-source ./scripts/test_lib.sh
+source ./scripts/test_utils.sh
 
 # When we source ./scripts/test_lib.sh, it has the line set -u which treats unset variables as errors.
 # We need to unset the variable to avoid the error.
