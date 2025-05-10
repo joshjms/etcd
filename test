@@ -426,6 +426,10 @@ EOF
 	VERSION="${VERSION}" "./scripts/test_images.sh"
 }
 
+function mod_tidy_pass {
+	go mod tidy -diff
+}
+
 function shellcheck_pass {
 	SHELLCHECK=shellcheck
 
@@ -714,6 +718,7 @@ function fmt_pass {
 			revive \
 			license_header \
 			receiver_name \
+			mod_tidy \
 			commit_title \
 			; do
 		echo "'$p' started at $(date)"
