@@ -44,3 +44,5 @@ function maybe_update_module {
 
 go mod tidy
 run_for_modules maybe_update_module
+
+make fix
